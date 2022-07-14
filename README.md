@@ -14,7 +14,7 @@
     * Auto Save: onFocusChange
     * Font Size: 각자 맞춰서 조절
     * Tab Size: 2
-    * Detect Indentation: 체크 해제
+    * Editor: Detect Indentation: 체크 해제
 
 ### 소스코드 다운로드
 * sample/day1.zip 다운로드
