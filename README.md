@@ -95,7 +95,6 @@
 * https://www.ecma-international.org/publications-and-standards/standards/ecma-262
 #### WHATWG - Standards(웹브라우저 기반 자바스크립트 표준)
 * https://spec.whatwg.org
-<br>
 ## 플랫폼, 프레임워크, 라이브러리
 #### Nodejs
 * https://nodejs.org
@@ -103,7 +102,6 @@
 * https://electronjs.org
 #### JQuery
 * https://jquery.com
-<br>
 ## 학습 및 참고 사이트
 #### MDN Web Docs - JavaScript
 * https://developer.mozilla.org/ko/docs/Web/JavaScript
