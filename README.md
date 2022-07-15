@@ -50,7 +50,8 @@
 7. 각 예제 실행 결과를 개발자 도구의 Console 탭에서 확인
 
 ## PPT 다운로드
-* PPT 폴더 이동 후 각 PPT 파일 선택해서 Download 버튼 클릭
+* 00.자바스크립트 - DOM, Ajax.pptx [다운로드](https://github.com/uzoolove/js202207/raw/master/PPT/00.%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20-%20DOM%2C%20Ajax.pptx)
+
 
 ## 소스코드 공유(본인의 소스코드를 강사에게 공유하고 싶을때)
 1. [Code Share](https://codeshare.io/PdnpWo) 접속(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)
@@ -86,13 +87,26 @@
   * C:\jslab\index.html
 
 # 관련 사이트
-## Nodejs
+## 표준
+#### ECMA-262(자바스크립트 문법 표준)
+* https://www.ecma-international.org/publications-and-standards/standards/ecma-262
+#### WHATWG - Standards(웹브라우저 기반 자바스크립트 표준)
+* https://spec.whatwg.org
+<br>
+## 플랫폼, 프레임워크, 라이브러리
+#### Nodejs
 * https://nodejs.org
-## electron
+#### Electron
 * https://electronjs.org
-## ECMAScript6 새로운 기능
-* http://es6-features.org/
-## ES6 호환성 테이블
-* http://kangax.github.io/compat-table/es6/
-## 브라우저 점유율
-* https://gs.statcounter.com
+#### JQuery
+* https://jquery.com
+<br>
+## 학습 및 참고 사이트
+#### MDN Web Docs - JavaScript
+* https://developer.mozilla.org/ko/docs/Web/JavaScript
+#### W3 Schools - JavaScript and HTML DOM Reference
+* https://www.w3schools.com/jsref
+#### W3 Schools - JavaScript Tutorial
+* https://www.w3schools.com/js
+#### ECMAScript6 새로운 기능
+* http://es6-features.org
