@@ -1,3 +1,9 @@
 ins
 .history
 etc/nodejs/node_modules
+
+# sample 폴더의 하위 폴더
+sample/**/
+
+# 오피스 임시파일
+PPT/~$*
