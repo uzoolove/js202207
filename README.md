@@ -51,7 +51,10 @@
 
 ## PPT 다운로드
 * 00.자바스크립트 - DOM, Ajax.pptx [다운로드](https://github.com/uzoolove/js202207/raw/master/PPT/00.%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20-%20DOM%2C%20Ajax.pptx)
-
+* 01.자바스크립트 - 기초 문법.pptx [다운로드](https://github.com/uzoolove/js202207/raw/master/PPT/01.%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20-%20%EA%B8%B0%EC%B4%88%20%EB%AC%B8%EB%B2%95.pptx)
+* 02.자바스크립트 - 함수.pptx [다운로드](https://github.com/uzoolove/js202207/raw/master/PPT/02.%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20-%20%ED%95%A8%EC%88%98.pptx)
+* 03.자바스크립트 - 상속과 클래스.pptx [다운로드](https://github.com/uzoolove/js202207/raw/master/PPT/03.%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20-%20%EC%83%81%EC%86%8D%EA%B3%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4.pptx)
+* 04.자바스크립트 - 클로저.pptx [다운로드](https://github.com/uzoolove/js202207/raw/master/PPT/04.%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20-%20%ED%81%B4%EB%A1%9C%EC%A0%80.pptx)
 
 ## 소스코드 공유(본인의 소스코드를 강사에게 공유하고 싶을때)
 1. [Code Share](https://codeshare.io/PdnpWo) 접속(마우스 오른쪽 버튼 > 새 탭에서 링크 열기)
