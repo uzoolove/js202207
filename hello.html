@@ -8,10 +8,19 @@
   <script src="hello.js"></script>
   <script type="text/javascript">
     console.log('Hello Javascript - 1');
+
+    window.addEventListener('load', function(){
+      var btn = document.querySelector('button');
+      btn.addEventListener('click', function(event, a, b, c){
+        console.log('버튼 클릭.', event.clientX);
+      });
+    });
+
   </script>
 </head> 
 <body>
   <h1>Hello Javascript - 2</h1>
+  <button>누르시오</button>
   <script type="text/javascript">
     console.log('Hello Javascript - 3');
   </script>
