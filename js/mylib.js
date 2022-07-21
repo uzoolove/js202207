@@ -1,5 +1,12 @@
 var MyLib = {};
 
+// 배열의 최소값을 반환한다.
+// var a = new Array(20, 10, 30);
+// a.min(); -> 10
+Array.prototype.min = function(){
+  return Math.min(...this);
+};
+
 MyLib.get = function(url, data, success){
   var options = {};
   if(typeof data == 'string'){
