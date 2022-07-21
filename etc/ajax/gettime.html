@@ -49,7 +49,9 @@
   }
 
 	// 3. mylib.js의 ajax(url, method, async, data, dataType, success) 함수를 이용한 Ajax 요청
-	function getTime(){}
+	function getTime(){
+    ajax('/time', 'get', true, 'msg=ajax-1', 'text', append);
+  }
 
 	// 4. mylib.js의 ajax(url, options) 함수를 이용한 Ajax 요청
 	// function getTime(){}
