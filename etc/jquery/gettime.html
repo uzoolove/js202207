@@ -8,23 +8,32 @@
 <script src="../../js/jquery-1.12.4.js"></script>
 <script>
 	$(function(){
-    $('button').on('click', function(){
-      $.ajax('/time', {
-        data: 'msg=ajax-1',
+    $('button').on('click', async function(){
+      await $.ajax('/time', {
+        data: 'msg=1. ajax-1',
         success: append
       });
-      $.ajax('/timejson', {
-        data: 'msg=ajax-2',
+      await $.ajax('/timejson', {
+        data: 'msg=2. ajax-2',
         success: appendJson,
         dataType: 'json',
         method: 'post',
         async: false
       });
-      $.ajax('/time?msg=ajax-3');
-      $.ajax('/time', {
-        data: 'msg=ajax-4',
+      await $.ajax('/time?msg=3. ajax-3');
+      await $.ajax('/time', {
+        data: 'msg=4. ajax-4',
         success: append
       });
+
+      await $.get('/time', 'msg=5. get-1', append);
+      await $.get('/time', 'msg=6. get-2');
+      await $.get('/time?msg=7. get-3', append);
+      await $.get('/time?msg=8. get-4');
+
+      await $.getJSON('/timejson', 'msg=9. getjson-1', appendJson);
+
+      await $.post('/time', 'msg=10. post', append);
     });
   });
 	

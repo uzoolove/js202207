@@ -1,5 +1,18 @@
+var MyLib = {};
+
+MyLib.get = function(url, data, success){
+  var options = {};
+  if(typeof data == 'string'){
+    options.data = data;
+    options.success = success;
+  }else{
+    options.success = data;
+  }
+  MyLib.ajax(url, options);
+};
+
 // var ajax = function(url, method, async, data, dataType, success){
-var ajax = function(url, options){
+MyLib.ajax = function(url, options){
   options = options || {};
   options.method = options.method || 'get';
   if(options.async == undefined){
