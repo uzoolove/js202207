@@ -11,8 +11,8 @@
   // window.addEventListener('load', function(){});
 	window.onload = function(){
 		document.querySelector('button').onclick = function(){
-      getTimeXHR();
-      getTimeJson();
+      // getTimeXHR();
+      // getTimeJson();
       getTime();
     };
 	};
@@ -51,10 +51,33 @@
 	// 3. mylib.js의 ajax(url, method, async, data, dataType, success) 함수를 이용한 Ajax 요청
 	function getTime(){
     ajax('/time', 'get', true, 'msg=ajax-1', 'text', append);
+    ajax('/timejson', 'post', false, 'msg=ajax-2', 'JSON', appendJson);
+    ajax('/time?msg=ajax-3');
+    ajax('/time?msg=ajax-4', 0, '', null, undefined, append);
   }
 
 	// 4. mylib.js의 ajax(url, options) 함수를 이용한 Ajax 요청
-	// function getTime(){}
+	function getTime(){
+    ajax('/time', {
+      data: 'msg=ajax-1',
+      success: append,
+      // dataType: 'text',
+      // method: 'GET',
+      // async: true
+    });
+    ajax('/timejson', {
+      data: 'msg=ajax-2',
+      success: appendJson,
+      dataType: 'json',
+      method: 'post',
+      async: false
+    });
+    ajax('/time?msg=ajax-3');
+    ajax('/time', {
+      data: 'msg=ajax-4',
+      success: append
+    });
+  }
 
 	// 5. mylib.js의 get(url, data, success) 함수를 이용한 Ajax 요청
 	// function getTime(){}

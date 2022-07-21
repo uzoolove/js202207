@@ -7,7 +7,26 @@
 <script src="../../js/mylib.js"></script>
 <script src="../../js/jquery-1.12.4.js"></script>
 <script>
-	
+	$(function(){
+    $('button').on('click', function(){
+      $.ajax('/time', {
+        data: 'msg=ajax-1',
+        success: append
+      });
+      $.ajax('/timejson', {
+        data: 'msg=ajax-2',
+        success: appendJson,
+        dataType: 'json',
+        method: 'post',
+        async: false
+      });
+      $.ajax('/time?msg=ajax-3');
+      $.ajax('/time', {
+        data: 'msg=ajax-4',
+        success: append
+      });
+    });
+  });
 	
 	function append(str){
 		document.querySelector('#result').innerHTML += str + '<br>';
