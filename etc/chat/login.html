@@ -11,6 +11,7 @@
       $('button').on('click', () => {
         var nickname = $('#nickname').val();
         console.log(nickname);
+        window.chatAPI.login(nickname);
       });
     });
   </script>

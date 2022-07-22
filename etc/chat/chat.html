@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채팅</title>
+  <script src="./jquery-1.12.4.min.js"></script>
+  <script>
+    $(() => {
+      $('button').on('click', send);
+      $('#inputmsg').on('keydown', event => {
+        if(event.keyCode == 13){
+          send();
+        }
+      });
+    });
+
+    function send(){
+      let msg = $('#inputmsg');
+      window.chatAPI.sendMsg(msg.val());
+      msg.val('');
+      msg.focus();
+    }
+  </script>
+</head>
+<body>
+  <h1>채팅화면</h1>
+  <textarea id="msgout" rows="20" cols="40" readonly></textarea><br>
+  <input type="text" id="inputmsg" autofocus>
+  <button>전송</button>
+</body>
+</html>

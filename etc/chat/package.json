@@ -1,14 +1,58 @@
 {
   "name": "chat",
   "version": "1.0.0",
+  "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "deploy:osx": "electron-builder --mac",
+    "deploy:win": "npm run deploy:win32 && npm run deploy:win64",
+    "deploy:win32": "electron-builder --win nsis:ia32",
+    "deploy:win64": "electron-builder --win nsis:x64"
+  },
+  "build": {
+    "productName": "대덕마이스터고 채팅",
+    "appId": "kr.djsch.dsmhs.chat",
+    "asar": true,
+    "mac": {
+      "target": [
+        "default"
+      ]
+    },
+    "dmg": {
+      "title": "Start Electron"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "installerLanguages": [
+        "en_US",
+        "ko_KR"
+      ],
+      "language": "1042"
+    },
+    "directories": {
+      "buildResources": "./",
+      "output": "./dist/",
+      "app": "."
+    }
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "electron": "^19.0.9"
+    "electron": "^19.0.8",
+    "electron-builder": "^23.1.0"
   }
 }
