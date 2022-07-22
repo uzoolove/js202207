@@ -11,9 +11,9 @@
   // window.addEventListener('load', function(){});
 	window.onload = function(){
 		document.querySelector('button').onclick = function(){
-      // getTimeXHR();
+      getTimeXHR();
       // getTimeJson();
-      getTime();
+      // getTime();
     };
 	};
 
@@ -25,7 +25,7 @@
 		xhr.open('get', '/time?msg=time', true);
     xhr.addEventListener('load', function(){
       // 4. 응답 데이터 처리
-      let result = xhr.responseText;
+      let result = this.responseText;
       append(result);
     });
 		// 3. 요청(send())
