@@ -1,17 +1,16 @@
 // ex06-08.js 복사
 // 고등학교 성적관리 클래스(총점과 평균 계산)
 class HighSchool{
-  constructor(kor, eng){
-    if(typeof eng != 'number'){
-      throw new Error('eng는 number 값으로 전달해야 합니다.');
-    }
+  private kor: number;
+  private eng: number;
+  constructor(kor: number, eng: number){
     this.kor = kor;
     this.eng = eng;
   }
-  sum(){
+  sum(): number{
     return this.kor + this.eng;
   };
-  avg(){
+  avg(): number{
     return Math.round(this.sum() / 2);
   };
 }
@@ -25,7 +24,7 @@ class College extends HighSchool{
   constructor(kor, eng){
     super(kor, eng);
   }  
-  grade(){
+  grade(): string{
     var grade = 'F';
     var avg = this.avg();
     if(avg >= 90){
